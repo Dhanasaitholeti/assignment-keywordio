@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Dashboard from "./components/Dashboard";
-import CreateAd from "./components/Createad";
-import TextAd from "./components/TextAd";
-import MediaAd from "./components/MediaAd";
+import Dashboard from "./pages/Dashboard";
+import CreateAd from "./pages/CreateAd";
+import TextAd from "./pages/TextAd";
+import MediaAd from "./pages/MediaAd";
 
 function App() {
   return (
