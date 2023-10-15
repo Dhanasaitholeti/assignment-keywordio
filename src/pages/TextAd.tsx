@@ -1,8 +1,12 @@
+import BussinessLabel from "../components/BussinessLabels";
+import Headings from "../components/Headings";
+
 const TextAd = () => {
   return (
     <>
-      <main>
-        <h1>Text ad is here</h1>
+      <main className="bg-green-400 p-10 flex flex-col gap-10">
+        <Headings />
+        <BussinessLabel />
       </main>
     </>
   );
