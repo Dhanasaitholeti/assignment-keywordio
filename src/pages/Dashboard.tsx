@@ -1,8 +1,12 @@
+import AdInsights from "../components/AdInsights";
+import AdMetrics from "../components/AdMetrics";
+
 const Dashboard = () => {
   return (
     <>
-      <main>
-        <h1>This is Fucking Dashboard</h1>
+      <main className="container mx-auto py-10 flex items-center justify-between gap-20">
+        <AdInsights />
+        <AdMetrics />
       </main>
     </>
   );
