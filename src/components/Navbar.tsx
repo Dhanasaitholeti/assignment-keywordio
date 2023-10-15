@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center justify-between px-10 py-5 text-zinc-800 shadow-xl">
+      <nav className="flex items-center justify-between px-10 py-4 text-zinc-800 shadow-xl">
         <div>
           <h1 className="text-4xl font-bold">Keyword.io</h1>
         </div>
