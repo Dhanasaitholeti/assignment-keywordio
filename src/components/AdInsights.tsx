@@ -13,7 +13,7 @@ const AdInsights = () => {
 
   return (
     <div className="border border-gray-200 flex flex-col gap-5">
-      <div className="p-5 pb-2 text-xl font-semibold border-2 border-b-gray-200 ">
+      <div className="p-5 pb-2 text-xl font-semibold border-2 border-b-gray-200 text-gray-800">
         <p>Ads Insight</p>
       </div>
       <TableContainer>
@@ -21,7 +21,9 @@ const AdInsights = () => {
           <TableHead>
             <TableRow>
               {Adkeys.map((each) => (
-                <TableCell>{each}</TableCell>
+                <TableCell>
+                  <p className="font-bold text-lg">{each}</p>
+                </TableCell>
               ))}
             </TableRow>
           </TableHead>

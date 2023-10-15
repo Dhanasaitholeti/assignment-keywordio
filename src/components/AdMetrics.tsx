@@ -10,11 +10,10 @@ import { AdsMetrics } from "../configs/adsData";
 
 const AdMetrics = () => {
   const Adkeys = Object.keys(AdsMetrics[0]);
-  console.log(Adkeys);
 
   return (
     <div className="border border-gray-200 flex flex-col gap-5">
-      <div className="p-5 pb-2 text-xl font-semibold border-2 border-b-gray-200 ">
+      <div className="p-5 pb-2 text-xl font-semibold border-2 border-b-gray-200 text-gray-800">
         Ads Insight
       </div>
       <TableContainer>
@@ -22,7 +21,9 @@ const AdMetrics = () => {
           <TableHead>
             <TableRow>
               {Adkeys.map((each) => (
-                <TableCell>{each}</TableCell>
+                <TableCell>
+                  <p className="font-bold text-lg"> {each}</p>
+                </TableCell>
               ))}
             </TableRow>
           </TableHead>
