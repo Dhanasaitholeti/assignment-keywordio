@@ -1,11 +1,19 @@
+import { useLocation } from "react-router-dom";
+
 const BottomButtonGroup = () => {
-  const buttonStyles = "border border-black px-10 py-2";
+  const location = useLocation();
+  const pathname = location.pathname;
+  const buttonStyles = "font-semibold px-10 py-2 rounded-lg";
 
   return (
     <div className="flex justify-end px-20">
       <div className="flex gap-10">
-        <button className={buttonStyles}>Back</button>
-        <button className={buttonStyles}>{"Next"}</button>
+        {!(pathname === "/create-ad") && (
+          <button className={buttonStyles}>Back</button>
+        )}
+        <button className={`${buttonStyles} bg-blue-500 text-white`}>
+          {"Next"}
+        </button>
       </div>
     </div>
   );
