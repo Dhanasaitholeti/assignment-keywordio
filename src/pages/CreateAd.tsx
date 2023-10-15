@@ -1,12 +1,22 @@
+import BottomButtonGroup from "../components/BottomButtonGroup";
+
 const CreateAd = () => {
+  const boxStyle =
+    "h-[50vh] max-w-md w-full bg-white rounded-lg drop-shadow-2xl";
+
   return (
     <>
-      <main>
-        <div className="w-full max-h-[85vh] h-screen border-2 border-gray-300 flex items-center justify-center">
-          <div className="container border border-red-400 h-max">
-            <div className="aspect-potrait"></div>
-            <div></div>
+      <main className="border-2 border-gray-200 max-h-[85vh] h-screen flex flex-col items-center justify-center gap-20">
+        <div className="container flex items-center justify-center gap-20">
+          <div className={boxStyle}>
+            <input type="checkbox" />
           </div>
+          <div className={boxStyle}>
+            <input type="checkbox" />
+          </div>
+        </div>
+        <div className="w-full px-20">
+          <BottomButtonGroup />
         </div>
       </main>
     </>

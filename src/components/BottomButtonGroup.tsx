@@ -1,9 +1,11 @@
 const BottomButtonGroup = () => {
+  const buttonStyles = "border border-black px-10 py-2";
+
   return (
     <div className="flex justify-end px-20">
       <div className="flex gap-10">
-        <button className="border border-black px-5 py-2">Back</button>
-        <button className="border border-black px-5 py-2">{"Next"}</button>
+        <button className={buttonStyles}>Back</button>
+        <button className={buttonStyles}>{"Next"}</button>
       </div>
     </div>
   );

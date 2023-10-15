@@ -45,7 +45,6 @@ const AdMetrics = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      <div></div>
     </div>
   );
 };
