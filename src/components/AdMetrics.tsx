@@ -22,13 +22,6 @@ const AdMetrics = () => {
       ) : (
         <div className="flex items-center justify-center gap-10">
           <ChartStats />
-          <div className="w-44 border border-black">
-            <ul>
-              <li>hi</li>
-              <li>hello</li>
-              <li>haa</li>
-            </ul>
-          </div>
         </div>
       )}
       <div className="bg-red w-full flex justify-end p-10">

@@ -15,11 +15,12 @@ const BottomButtonGroup: React.FC<{ typeofad?: string }> = ({ typeofad }) => {
             Back
           </button>
         )}
+
         <button
           className={`${buttonStyles} bg-blue-500 text-white ${
-            !typeofad && "cursor-not-allowed"
+            pathname === "/create-ad" && !typeofad && "cursor-not-allowed"
           }`}
-          disabled={!typeofad}
+          disabled={pathname === "/create-ad" && !typeofad}
           onClick={
             pathname == "/create-ad"
               ? () => navigator(`/${typeofad}`)
