@@ -25,7 +25,7 @@ const CreateAd = () => {
           </div>
         </div>
         <div className="w-full px-20">
-          <BottomButtonGroup />
+          <BottomButtonGroup  />
         </div>
       </main>
     </>
