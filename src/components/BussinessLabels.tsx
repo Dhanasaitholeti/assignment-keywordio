@@ -3,8 +3,8 @@ import { styles } from "./CommonStyles";
 const BussinessLabel = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center px-20 gap-10">
-        <section className="flex w-full gap-10">
+      <div className="flex flex-col items-center justify-center lg:px-20 gap-10">
+        <section className="flex flex-col md:flex-row w-full gap-10">
           <section className={`${styles.sectionStyles} gap-2`}>
             <label htmlFor="business-name" className={styles.labelStyles}>
               Bussiness Name

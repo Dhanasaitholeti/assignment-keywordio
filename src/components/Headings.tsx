@@ -3,7 +3,7 @@ import { styles } from "./CommonStyles";
 const Headings = () => {
   return (
     <>
-      <div className="flex items-center justify-center px-20 gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:px-20 gap-10">
         <section className={`${styles.sectionStyles} gap-10`}>
           <section className="flex flex-col gap-2">
             <label htmlFor="heading1" className={styles.labelStyles}>

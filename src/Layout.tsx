@@ -8,7 +8,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="mx-10 my-10">{children}</main>
+      <main className="m-5 md:m-10">{children}</main>
     </>
   );
 };

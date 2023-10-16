@@ -13,14 +13,14 @@ const AdMetrics = () => {
   };
 
   return (
-    <div className="border border-gray-200 flex flex-col gap-5">
+    <div className="border border-gray-200 flex flex-col gap-5 w-[100%] lg:w-[50%]">
       <div className="p-5 pb-2 text-xl font-semibold border-2 border-b-gray-200 text-gray-800">
         Ads Insight
       </div>
       {dType === "table" ? (
         <TableStats />
       ) : (
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex items-center justify-center">
           <ChartStats />
         </div>
       )}

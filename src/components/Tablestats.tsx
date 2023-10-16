@@ -29,16 +29,13 @@ const TableStats = () => {
                 key={row.Group}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell
-                  component="th"
-                  scope="row"
-                >
+                <TableCell component="th" scope="row" sx={{ width: 100 }}>
                   {row.Group}
                 </TableCell>
-                <TableCell>{row.Clicks}</TableCell>
-                <TableCell>{row.Cost}</TableCell>
-                <TableCell>{row.Conversions}</TableCell>
-                <TableCell>{row.Revenue}</TableCell>
+                <TableCell sx={{ width: 100 }}>{row.Clicks}</TableCell>
+                <TableCell sx={{ width: 100 }}>{row.Cost}</TableCell>
+                <TableCell sx={{ width: 100 }}>{row.Conversions}</TableCell>
+                <TableCell sx={{ width: 100 }}>{row.Revenue}</TableCell>
               </TableRow>
             ))}
           </TableBody>
