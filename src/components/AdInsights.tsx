@@ -5,11 +5,37 @@ import {
   TableHead,
   TableRow,
   TableCell,
+  TableSortLabel, // import this component
 } from "@mui/material";
 import { AdsData } from "../configs/adsData";
+import { useState } from "react";
 
 const AdInsights = () => {
   const Adkeys = Object.keys(AdsData[0]);
+  const [order, setOrder] = useState<"asc" | "desc">("asc");
+  const [orderBy, setOrderBy] = useState<string>("");
+
+  const handleSortRequest = (column: string) => {
+    const isAsc = orderBy === column && order === "asc";
+    setOrder(isAsc ? "desc" : "asc");
+    setOrderBy(column);
+  };
+
+  const compare = (a: any, b: any, order: "asc" | "desc") => {
+    if (a < b) {
+      return order === "asc" ? -1 : 1;
+    }
+    if (a > b) {
+      return order === "asc" ? 1 : -1;
+    }
+    return 0;
+  };
+
+  const sortData = (data: any[], order: "asc" | "desc", orderBy: string) => {
+    return data.sort((a, b) => compare(a[orderBy], b[orderBy], order));
+  };
+
+  const sortedData = sortData(AdsData, order, orderBy);
 
   return (
     <div className="border border-gray-200 flex flex-col gap-5 w-[100%] lg:w-[50%]">
@@ -22,15 +48,21 @@ const AdInsights = () => {
             <TableRow>
               {Adkeys.map((each) => (
                 <TableCell>
-                  <p className="font-bold text-md lg:text-lg overflow-x-hidden">
-                    {each}
-                  </p>
+                  <TableSortLabel
+                    active={orderBy === each}
+                    direction={orderBy === each ? order : "asc"}
+                    onClick={() => handleSortRequest(each)}
+                  >
+                    <p className="font-bold text-md lg:text-lg overflow-x-hidden">
+                      {each}
+                    </p>
+                  </TableSortLabel>
                 </TableCell>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
-            {AdsData.map((row) => (
+            {sortedData.map((row) => (
               <TableRow
                 key={row.Campaigns}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
