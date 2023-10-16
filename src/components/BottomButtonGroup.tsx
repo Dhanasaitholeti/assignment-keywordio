@@ -8,7 +8,7 @@ const BottomButtonGroup: React.FC<{ typeofad?: string }> = ({ typeofad }) => {
   const buttonStyles = "font-semibold px-10 py-2 rounded-lg";
 
   return (
-    <div className="flex justify-end px-20">
+    <div className="flex justify-center items-center lg:justify-end px-20">
       <div className="flex gap-10">
         {!(pathname === "/create-ad") && (
           <button className={buttonStyles} onClick={() => navigator(-1)}>

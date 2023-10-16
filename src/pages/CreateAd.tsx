@@ -10,12 +10,12 @@ const CreateAd = () => {
   };
 
   const boxStyle =
-    "group aspect-potrait max-w-lg w-full bg-white rounded-lg drop-shadow-2xl p-5 hover:cursor-pointer";
+    "group  max-w-xs lg:max-w-md w-full bg-white rounded-lg drop-shadow-2xl p-5 hover:cursor-pointer";
 
   return (
     <>
-      <main className="border-2 border-gray-200 max-h-[85vh] h-screen flex flex-col items-center justify-center gap-20">
-        <div className="container flex flex-col lg:flex-row items-center justify-center gap-20">
+      <main className="border-2 border-gray-200 max-h-[85vh] h-screen flex flex-col items-center justify-center gap-10  overflow-scroll">
+        <div className="container flex flex-col lg:flex-row items-center justify-center gap-5">
           <div className={boxStyle} onClick={() => handleCardClick("textad")}>
             <input
               type="checkbox"
@@ -23,7 +23,7 @@ const CreateAd = () => {
               className="w-6 h-6"
             />
             <div className="flex flex-col items-center justify-center gap-10">
-              <img src={TextAd} alt="" className="aspect-square w-56" />
+              <img src={TextAd} alt="" className="aspect-square w-32 lg:w-56" />
               <h1 className="text-xl font-medium">Text ad</h1>
             </div>
           </div>
@@ -34,7 +34,7 @@ const CreateAd = () => {
               className="w-6 h-6"
             />
             <div className="flex flex-col items-center justify-center gap-10">
-              <img src={TextAd} alt="" className="aspect-square w-56" />
+              <img src={TextAd} alt="" className="aspect-square w-24 lg:w-56" />
 
               <h1 className="text-xl font-medium">Media ad</h1>
             </div>
