@@ -17,7 +17,7 @@ const TableStats = () => {
           <TableHead>
             <TableRow>
               {Adkeys.map((each) => (
-                <TableCell>
+                <TableCell key={each}>
                   <p className="font-bold text-md lg:text-lg"> {each}</p>
                 </TableCell>
               ))}

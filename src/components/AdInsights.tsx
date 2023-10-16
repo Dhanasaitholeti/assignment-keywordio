@@ -47,7 +47,7 @@ const AdInsights = () => {
           <TableHead>
             <TableRow>
               {Adkeys.map((each) => (
-                <TableCell>
+                <TableCell key={each}>
                   <TableSortLabel
                     active={orderBy === each}
                     direction={orderBy === each ? order : "asc"}
