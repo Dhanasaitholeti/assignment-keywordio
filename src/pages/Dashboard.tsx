@@ -4,7 +4,7 @@ import AdMetrics from "../components/AdMetrics";
 const Dashboard = () => {
   return (
     <>
-      <main className="container mx-auto py-10 flex items-center justify-between gap-20">
+      <main className="container w-full mx-auto py-10 flex flex-col lg:flex-row items-center justify-between gap-10">
         <AdInsights />
         <AdMetrics />
       </main>
