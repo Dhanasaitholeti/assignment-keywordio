@@ -6,11 +6,11 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 const ChartStats = () => {
   return (
     <>
-      <PieChart width={800} height={400}>
+      <PieChart width={400} height={250} className="w-min border-black border">
         <Pie
           data={AdsMetrics}
-          cx={120}
-          cy={200}
+          cx={180}
+          cy={125}
           innerRadius={60}
           outerRadius={80}
           fill="#8884d8"
