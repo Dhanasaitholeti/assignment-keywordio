@@ -3,7 +3,7 @@ import { AdsMetrics } from "../configs/adsData";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
-const ChartStats = () => {
+const ChartStats: React.FC<{ metric: string }> = ({ metric }) => {
   return (
     <>
       <PieChart width={600} height={250}>
@@ -15,7 +15,7 @@ const ChartStats = () => {
           outerRadius={80}
           fill="#8884d8"
           paddingAngle={5}
-          dataKey="Clicks"
+          dataKey={metric}
           nameKey="Group"
         >
           {AdsMetrics.map((entry, index) => (

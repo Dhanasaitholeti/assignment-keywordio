@@ -1,7 +1,7 @@
 import BottomButtonGroup from "../components/BottomButtonGroup";
-import BussinessLabel from "../components/BussinessLabels";
-import Headings from "../components/Headings";
-import MediaLabels from "../components/MediaLable";
+import BussinessLabel from "../components/formComponents/BussinessLabels";
+import Headings from "../components/formComponents/Headings";
+import MediaLabels from "../components/formComponents/MediaLable";
 
 const MediaAd = () => {
   return (

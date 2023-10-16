@@ -1,6 +1,6 @@
 import BottomButtonGroup from "../components/BottomButtonGroup";
-import BussinessLabel from "../components/BussinessLabels";
-import Headings from "../components/Headings";
+import BussinessLabel from "../components/formComponents/BussinessLabels";
+import Headings from "../components/formComponents/Headings";
 
 const TextAd = () => {
   return (

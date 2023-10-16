@@ -1,4 +1,4 @@
-import { styles } from "./CommonStyles";
+import { styles } from "../CommonStyles";
 
 const Headings = () => {
   return (
