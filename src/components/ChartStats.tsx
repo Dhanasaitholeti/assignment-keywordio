@@ -19,7 +19,10 @@ const ChartStats = () => {
           nameKey="Group"
         >
           {AdsMetrics.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            <Cell
+              key={`cell-${entry.Group}`}
+              fill={COLORS[index % COLORS.length]}
+            />
           ))}
         </Pie>
         <Tooltip />

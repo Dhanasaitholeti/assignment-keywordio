@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BottomButtonGroup from "../components/BottomButtonGroup";
+import TextAd from "../assets/images/text-only-ad.png";
 
 const CreateAd = () => {
   const [adType, setAdType] = useState<string | undefined>(undefined);
@@ -21,7 +22,10 @@ const CreateAd = () => {
               checked={adType == "textad"}
               className="w-6 h-6"
             />
-            <h1>Text Ad</h1>
+            <div className="flex flex-col items-center justify-center gap-10">
+              <img src={TextAd} alt="" className="aspect-square w-56" />
+              <h1 className="text-xl font-medium">Text ad</h1>
+            </div>
           </div>
           <div className={boxStyle} onClick={() => handleCardClick("mediaad")}>
             <input
@@ -29,7 +33,11 @@ const CreateAd = () => {
               checked={adType == "mediaad"}
               className="w-6 h-6"
             />
-            <h1>Media Ad</h1>
+            <div className="flex flex-col items-center justify-center gap-10">
+              <img src={TextAd} alt="" className="aspect-square w-56" />
+
+              <h1 className="text-xl font-medium">Media ad</h1>
+            </div>
           </div>
         </div>
         <div className="w-full px-20">

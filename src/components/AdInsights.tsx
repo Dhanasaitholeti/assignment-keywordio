@@ -5,7 +5,6 @@ import {
   TableHead,
   TableRow,
   TableCell,
-  Grid,
 } from "@mui/material";
 import { AdsData } from "../configs/adsData";
 
